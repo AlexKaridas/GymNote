@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 5.8.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_PUBLIC_SUPABASE_URL": "https://jgwhdayufvfkwdvvxbrb.supabase.co",
+          "EXPO_PUBLIC_SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impnd2hkYXl1ZnZma3dkdnZ4YnJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTk1Njc4OTQsImV4cCI6MjAxNTE0Mzg5NH0.3FmC3EaLv7EJlIVNhFQSJoGTJUQAetTCmmwnmhQs1Iw",
+          "ANDROID_SDK_ROOT": "/media/alex/SSD D/FILES/androidsdk"
+        }
+      }
+    },
+    "local": {
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_PUBLIC_SUPABASE_URL": "https://jgwhdayufvfkwdvvxbrb.supabase.co",
+          "EXPO_PUBLIC_SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impnd2hkYXl1ZnZma3dkdnZ4YnJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTk1Njc4OTQsImV4cCI6MjAxNTE0Mzg5NH0.3FmC3EaLv7EJlIVNhFQSJoGTJUQAetTCmmwnmhQs1Iw",
+          "ANDROID_SDK_ROOT": "/media/alex/SSD D/FILES/androidsdk"
+        }
+      }
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}

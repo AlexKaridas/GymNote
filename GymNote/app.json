@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "GymNote",
+    "slug": "GymNote",
+    "version": "1.0.0",
+    "scheme": "gymnote",
+
+    "orientation": "portrait",
+    "icon": "assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.greekdev.GymNote"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "*.supabase.co",
+              "pathPrefix": "/auth/magic-link"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ],
+      "package": "com.greekdev.GymNote"
+    },
+    "web": {
+      "favicon": "assets/favicon.png"
+    },
+    "plugins": ["expo-router", "@react-native-google-signin/google-signin"],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "dde7c811-c8d0-4ebc-91c9-36baaeb2fa87"
+      }
+    }
+  }
+}
